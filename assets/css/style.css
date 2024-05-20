@@ -15,6 +15,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+  width: 100%;
+  /* border: 2px solid #51ff0c; */
+}
+
+.navbar_logo {
+  height: 50px;
+  width: 50px;
 }
 
 body {
@@ -28,15 +44,6 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  gap: 20px;
 }
 
 main {
@@ -56,7 +63,8 @@ main {
 }
 
 .card {
-  background: #191c29;
+  /* background: #191c29; */
+  background: #9e471f4f;
   width: var(--card-width);
   height: var(--card-height);
   padding: 3px;
@@ -69,9 +77,14 @@ main {
   text-align: center;
   display: flex;
   font-size: 1.5em;
-  color: #3c67e3;
+  /* color: #3c67e3; */
+  color: #131415;
   cursor: pointer;
   font-family: cursive;
+}
+
+.fire {
+  --water-border-gradient: linear-gradient(135deg, #6390f0, #6890f0);
 }
 
 .card::before {
@@ -81,9 +94,9 @@ main {
   border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
+    #ffffff,
+    #e3d23c 43%,
+    #c20000
   );
   position: absolute;
   z-index: -1;
@@ -106,9 +119,9 @@ main {
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
     var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
+    #ffffff,
+    #e3d23c 43%,
+    #c20000
   );
   opacity: 1;
   transition: opacity 0.5s;
@@ -119,6 +132,15 @@ main {
   width: 200px;
   height: 200px;
   /* border: 1px solid #3c67e3; */
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: large;
 }
 
 @keyframes spin {
