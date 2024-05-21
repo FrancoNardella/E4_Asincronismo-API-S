@@ -24,15 +24,16 @@ const capitalizeFirstLetter = (string) => {
 
 const templatePokemon = (pokemon) => {
   const { name, sprites, types, height, weight } = pokemon;
-  const primaryType = types.map((typeInfo) => typeInfo.type.name).join("-");
-  const PokemonName = capitalizeFirstLetter(name);
+  const typesHTML = types.map((typeInfo) => typeInfo.type.name).join(",");
+  const capitalizedPokemonName = capitalizeFirstLetter(name);
+  const primaryType = types[0].type.name;
   const cardClass = `type-${primaryType}`;
 
   const pokemonHTML = `
-    <div class="card ${primaryType}">
-    <h2>${PokemonName}</h2>
-      <img src="${sprites.front_default}" alt="${PokemonName}" />
-      <p>Type: ${primaryType}</p>
+    <div class="card ${cardClass}">
+      <h2>${capitalizedPokemonName}</h2>
+      <img src="${sprites.front_default}" alt="${capitalizedPokemonName}" />
+      <p>Type: ${typesHTML}</p>
       <p>Height: ${height / 10} Mts</p>
       <p>Weight: ${weight / 10} Kg</p>
     </div>
@@ -52,3 +53,10 @@ const renderPokemon = async () => {
 };
 
 renderPokemon();
+form.reset();
+
+const init = () => {
+  form.addEventListener("submit", getPokemon);
+};
+
+init();

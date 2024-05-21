@@ -11,13 +11,29 @@
     <header class="header">
       <div class="logo_container">
         <img class="navbar_logo" src="assets/img/pokeball.png" alt="pokeball" />
-        PokeAPI
+        <h1>PokeAPI</h1>
       </div>
     </header>
+    <div class="search-box">
+      <form id="form">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input
+          type="text"
+          name="pokemon"
+          autocomplete="off"
+          placeholder="Buscar Pokemon por ID"
+          class="search-input"
+        />
+      </form>
+    </div>
     <main>
+      <!-- Box del search -->
+
       <div class="contenedor"></div>
     </main>
     <!-- Script -->
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

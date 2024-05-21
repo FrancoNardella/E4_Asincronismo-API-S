@@ -1,71 +1,71 @@
 .type-normal {
-  --normal-border-gradient: linear-gradient(135deg, #a8a77a, #c6c6a7);
+  background-image: linear-gradient(#acacac, #00000067);
 }
 
 .type-fire {
-  --fire-border-gradient: linear-gradient(135deg, #ee8130, #f5ac78);
+  background-image: linear-gradient(#ee8434, #00000067);
 }
 
 .type-water {
-  --water-border-gradient: linear-gradient(135deg, #6390f0, #6890f0);
+  background-image: linear-gradient(#6390f0, #00000067);
 }
 
 .type-electric {
-  --electric-border-gradient: linear-gradient(135deg, #f7d02c, #fae078);
+  background-image: linear-gradient(#F7D02C, #00000067);
 }
 
 .type-grass {
-  --grass-border-gradient: linear-gradient(135deg, #7ac74c, #a7db8d);
+  background-image: linear-gradient(#81fd39b2, #00000067);
 }
 
 .type-ice {
-  --ice-border-gradient: linear-gradient(135deg, #96d9d6, #bce6e6);
+  background-image: linear-gradient(#96D9D6, #00000067);
 }
 
 .type-fighting {
-  --fighting-border-gradient: linear-gradient(135deg, #c22e28, #d56723);
+  background-image: linear-gradient(#C22E28, #00000067);
 }
 
 .type-poison {
-  --poison-border-gradient: linear-gradient(135deg, #a33ea1, #c183c1);
+  background-image: linear-gradient(#A33EA1, #00000067);
 }
 
 .type-ground {
-  --ground-border-gradient: linear-gradient(135deg, #e2bf65, #ebd69d);
+  background-image: linear-gradient(#E2BF65, #00000067);
 }
 
 .type-flying {
-  --flying-border-gradient: linear-gradient(135deg, #a98ff3, #c6b7f5);
+  background-image: linear-gradient(#A98FF3, #00000067);
 }
 
 .type-psychic {
-  --psychic-border-gradient: linear-gradient(135deg, #f95587, #fa92b2);
+  background-image: linear-gradient(#F95587, #00000067);
 }
 
 .type-bug {
-  --bug-border-gradient: linear-gradient(135deg, #a6b91a, #c6d16e);
+  background-image: linear-gradient(#A6B91A, #00000067);
 }
 
 .type-rock {
-  --rock-border-gradient: linear-gradient(135deg, #b6a136, #d1c17d);
+  background-image: linear-gradient(#B6A136, #00000067);
 }
 
 .type-ghost {
-  --ghost-border-gradient: linear-gradient(135deg, #735797, #a292bc);
+  background-image: linear-gradient(#735797, #00000067);
 }
 
 .type-dragon {
-  --dragon-border-gradient: linear-gradient(135deg, #6f35fc, #a27dfa);
+  background-image: linear-gradient(#6F35FC, #00000067);
 }
 
 .type-dark {
-  --dark-border-gradient: linear-gradient(135deg, #705746, #a29288);
+  background-image: linear-gradient(#705746, #00000067);
 }
 
 .type-steel {
-  --steel-border-gradient: linear-gradient(135deg, #b7b7ce, #d1d1e0);
+  background-image: linear-gradient(#B7B7CE, #00000067);
 }
 
 .type-fairy {
-  --fairy-border-gradient: linear-gradient(135deg, #d685ad, #f4bdc9);
+  background-image: linear-gradient(#D685AD, #00000067);
 }
