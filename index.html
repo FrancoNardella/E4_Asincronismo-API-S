@@ -16,22 +16,22 @@
     </header>
     <div class="search-box">
       <form id="form">
-        <button type="submit">
+        <!-- <button type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        </button> -->
         <input
-          type="text"
+          type="number"
           name="pokemon"
           autocomplete="off"
           placeholder="Buscar Pokemon por ID"
           class="search-input"
         />
+        <button id="searchButton">Buscar</button>
       </form>
     </div>
     <main>
-      <!-- Box del search -->
-
       <div class="contenedor"></div>
+      <div id="errorMsg"></div>
     </main>
     <!-- Script -->
     <script type="module" src="./assets/js/main.js"></script>
